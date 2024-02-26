@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("../partials/head")  %>
+<body>
+    <%- include("../partials/header")  %>
+    <section class="main-content">
+        <h2><%= bikeSub %></h2>
+        <p><%= bikePara %></p>
+        <% if (path === "racer") { %>
+            <%- include("../partials/racerarticle") %>
+        <% } else if (path === "racer/history") { %>
+            <%- include("../partials/bikehistory") %>
+        <% } else if (path === "mtb") { %>
+            <%- include("../partials/mtbarticle") %>
+        <% } else if (path === "mtb/history") { %>
+            <%- include("../partials/bikehistory") %>
+        <% } else { %>
+            <%- include("../partials/noarticle") %>
+        <% } %>    
+    </section>
+    <%- include("../partials/footer") %>
+</body>
+</html>

@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    padding: 20px 0 0 0;
+    background-image: url("../images/bicycles.jpg");
+    background-size: cover;
+}
+
+h1 {
+    margin: 0;
+    flex-grow: 1;
+    color: rgb(226, 120, 138);
+    font-size: 2rem;
+}
+
+nav {
+    background-color: rgba(240, 125, 144, 0.5);
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+li a {
+    padding: 4px 16px;
+    border-radius: 1px;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: 200ms;
+    color: aliceblue;
+}
+
+li a:hover {
+    background-color: rgb(243, 168, 181);
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+article {
+    padding: 20px;
+}
+
+.bike-img {
+    width: 80%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 5px;
+    margin: 16px;
+}
+
+footer {
+    background-color: rgba(172, 59, 78, 0.5)
+}
+
+@media screen and (min-width: 1025px) {
+    .bike-img {
+        width: calc(30% + 300px)
+    }
+}
