@@ -4,7 +4,7 @@ import racerRouter from "./routes/racer.js";
 import * as path from "path";
 
 const app = express();
-const port = 3020;
+const port = process.env.PORT || 3020;
 const __dirname = path.resolve();
 app.set("view engine", "ejs");
 app.set("views", )
