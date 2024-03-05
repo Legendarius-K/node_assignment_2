@@ -20,5 +20,13 @@ racerRouter.get("/history", (req, res) => res.render("pages/bikes", {
     path: "racer/history"
 }));
 
+racerRouter.get("/future", (req, res) => res.render("pages/bikes", {
+    pageTitle: "Welcome to Bikes!",
+    bikeClass: "racer",
+    bikeSub: "Racers!",
+    bikePara: "The future of racers!",
+    path: "racer/future"
+}));
+
 
 export default racerRouter;

@@ -20,4 +20,12 @@ mtbRouter.get("/history", (req, res) => res.render("pages/bikes", {
     path: "mtb/history"
 }));
 
+mtbRouter.get("/future", (req, res) => res.render("pages/bikes", {
+    pageTitle: "Welcome to Bikes!",
+    bikeClass: "mtb",
+    bikeSub: "Mountain bikes!",
+    bikePara: "The future of mountain bikes!",
+    path: "mtb/future"
+}));
+
 export default mtbRouter;

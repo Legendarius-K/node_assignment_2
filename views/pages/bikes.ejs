@@ -10,10 +10,14 @@
             <%- include("../partials/racerarticle") %>
         <% } else if (path === "racer/history") { %>
             <%- include("../partials/bikehistory") %>
+        <% } else if (path === "racer/future") { %>
+            <%- include("../partials/bikefuture") %>
         <% } else if (path === "mtb") { %>
             <%- include("../partials/mtbarticle") %>
         <% } else if (path === "mtb/history") { %>
             <%- include("../partials/bikehistory") %>
+        <% } else if (path === "mtb/future") { %>
+            <%- include("../partials/bikefuture") %>
         <% } else { %>
             <%- include("../partials/noarticle") %>
         <% } %>    

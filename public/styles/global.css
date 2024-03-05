@@ -32,7 +32,8 @@ h1 {
 }
 
 nav {
-    background-color: rgba(240, 125, 144, 0.5);
+    background-color: rgba(240, 125, 144, 0.7);
+    height: 60px;
 }
 
 ul {
@@ -41,13 +42,36 @@ ul {
     list-style: none;
 }
 
+.menu-item {
+    position: relative;
+} 
+
+.submenu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 30px;
+    margin-left: -50px;
+    display: none;
+}
+
+.submenu li {
+    margin: 5px;
+    background-color: rgba(240, 125, 144);
+}
+
+.menu-racer:hover .racer-sub {
+    display: inline-block;
+}
+
 li a {
+    font-size: 1.2rem;
     padding: 4px 16px;
     border-radius: 1px;
     text-decoration: none;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     transition: 200ms;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
 
 li a:hover {
@@ -72,7 +96,7 @@ article {
 }
 
 footer {
-    background-color: rgba(172, 59, 78, 0.5)
+    background-color: rgb(215, 127, 141)
 }
 
 @media screen and (min-width: 1025px) {
